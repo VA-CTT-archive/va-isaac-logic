@@ -28,6 +28,17 @@
         <dependency>
             <groupId>au.csiro</groupId>
             <artifactId>snorocket-core</artifactId>
+            <exclusions>
+                <exclusion>  <!-- Exclude this old version, that causes incompatibilities with grizzly -->
+                    <groupId>org.glassfish.jersey.media</groupId>
+                    <artifactId>jersey-media-moxy</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>  <!-- use this version instead - which matches the version of grizzly we are using for test in the rest project-->
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-moxy</artifactId>
+            <version>${jersey.version}</version>
         </dependency>
         <dependency>
             <groupId>gov.vha.isaac.newtons-cradle.modules</groupId>
