@@ -3,18 +3,18 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>gov.vha.isaac</groupId>
-        <artifactId>isaac-parent</artifactId>
+        <artifactId>va-isaac-parent</artifactId>
         <version>1.11-SNAPSHOT</version>
     </parent>
     
     <groupId>gov.vha.isaac.logic</groupId>
-    <artifactId>logic-parent</artifactId>
+    <artifactId>va-isaac-logic</artifactId>
     <version>1.19-SNAPSHOT</version>
     <name>${project.artifactId}: (MMP)</name>
     <packaging>pom</packaging>
     
     <scm>
-        <url>https://github.com/Apelon-VA/va-logic.git</url>
+        <url>https://github.com/VA-CTT/va-logic.git</url>
     </scm>
     
     <properties>
